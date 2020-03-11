@@ -7,6 +7,17 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <nav>
+      <div class="theme-switch-wrapper">
+        <span>
+          Dark Mode
+        </span>
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+    </nav>
     <div class="container">
       <div class="info">
         <h1 class="hi">
@@ -19,19 +30,9 @@
           </p>
           <p>
             Currently revolutionizing healthcare @
-            <a
-              class="chorus"
-              href="http://chorus.se"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a class="chorus" href="http://chorus.se" target="_blank" rel="noopener noreferrer">
               <span>
-                <svg
-                  id="chorus-logo"
-                  xmlns="http://www.w3.org/2000/svg"
-                  version="1.0"
-                  viewBox="0 0 420 97"
-                >
+                <svg id="chorus-logo" xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 420 97">
                   <path
                     fill="currentColor"
                     d="M26.9 16C14.8 17.4 6.8 22.7 2.6 32-.3 38.4-.9 55.5 1.5 63.6c2.1 7.3 8.7 14.2 16.1 16.9 7.4 2.6 24.3 3.2 33.8 1l7.7-1.7-.3-4.6c-.2-2.6-.8-4.6-1.3-4.5-.6.1-4.8.9-9.5 1.9-16.3 3.3-28.7.2-33.7-8.4-3.5-6-4.4-18.4-1.9-26 2.3-6.8 7.7-11.6 14.5-13.1 6.6-1.4 8.8-1.4 18.6.4 7.8 1.4 8 1.4 10.3-.8 3.6-3.3 2.5-6-2.8-7.3-6.7-1.6-18.6-2.3-26.1-1.4zM295.2 15.7l-2.4.5.4 24.2.3 24.2 3 6c2.6 5.1 3.8 6.3 8.9 8.8 10.9 5.6 30.7 4.6 38.6-2 6.6-5.6 7.3-8.4 8.3-34.7.5-13.1.6-24.5.3-25.3-.4-.9-2.1-1.4-5.4-1.4h-4.9l-.5 22.8c-.4 20-.6 23.2-2.4 26.6-3.2 6.7-6.2 8.1-16.4 8.1-9.9 0-12.8-1.3-16.5-7.6-1.8-3.1-2-5.5-2.3-26.7-.3-16.8-.7-23.2-1.5-23.2-.7 0-2.1-.2-3.2-.4s-3-.2-4.3.1zM384 15.6c-11.4 2.2-17.4 7-18.5 14.8-.9 6 .1 10.1 3.6 14.1s7.7 5.7 18.9 7.9c16.2 3.2 20 5.4 20 11.1 0 5-3.2 8.2-9.6 9.6-5.5 1.2-12.1.8-29.5-1.8-3.4-.5-3.7-.3-4 2.4-.6 3.8-.1 6 1.6 6.7 3.8 1.4 19.9 2.8 27.5 2.3 17.7-1.1 25.2-7 25.2-19.7 0-12.3-5.2-16.2-27.2-20.4-9.8-1.9-12.6-3-14.5-5.9-2.2-3.3-1-7.4 2.7-9.7 5.4-3.3 11.3-3.4 31.1-.4l4.7.7v-9l-5.7-1.2c-6.5-1.3-22.5-2.2-26.3-1.5zM72.5 17.2c-.3.7-.4 15.7-.3 33.3l.3 32h10l.3-14.8.3-14.7H121v30h11V17.2l-2.7-.5c-1.6-.3-4-.3-5.5 0l-2.8.5V44H83.1l-.3-13.8-.3-13.7-4.8-.3c-3.2-.2-4.9.1-5.2 1zM166.5 17.4C155 21 149.6 27 147.1 38.8c-3.4 16.2 1.1 32.3 10.8 38.8 11.3 7.4 34 7 44.4-.9 7.7-5.9 12-20.8 9.9-34.7-2-13.2-8.3-21.2-19.4-24.5-6.2-1.8-20.7-1.9-26.3-.1zm24.1 9.6c7.4 3.2 10.4 9.8 10.4 23 0 7.6-.4 9.5-2.8 14.1-3.7 7.2-8.8 9.9-18.6 9.9-15.7-.1-22-7.1-22-24.5 0-12.3 2.8-18.5 9.9-22.3 6.4-3.4 15.5-3.5 23.1-.2zM226 49v33h11V58l7.8.6c4.2.3 8.2.7 8.8.9.6.2 4.7 5.3 9 11.4 7.4 10.5 8 11.1 12 11.7 4.6.7 8.4-.1 8.4-1.8 0-.5-3.8-6.2-8.5-12.6L266 56.6l2.7-1.4c4.3-2.2 7.4-5.4 9-9.1 2-4.6 1.8-15.2-.3-19.6-4-8.4-10.7-10.5-34.1-10.5H226v33zm36-22.5c4.2 2.2 6 5.3 6 10.7 0 9.1-5.9 12.7-20.7 12.8-10.8 0-10.3.6-10.3-13V25.1l2.8-.4c4.9-.9 19.3.3 22.2 1.8z"
@@ -100,11 +101,7 @@
               </a>
             </li>
             <li class="social-item">
-              <a
-                href="https://untappd.com/user/Krulla"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://untappd.com/user/Krulla" target="_blank" rel="noopener noreferrer">
                 <svg
                   id="untappd"
                   aria-hidden="true"
@@ -124,11 +121,7 @@
               </a>
             </li>
             <li class="social-item">
-              <a
-                href="https://www.strava.com/athletes/19046571"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://www.strava.com/athletes/19046571" target="_blank" rel="noopener noreferrer">
                 <svg
                   id="strava"
                   aria-hidden="true"
@@ -150,10 +143,47 @@
           </ul>
         </section>
       </div>
-      <img
-        class="headshot"
-        src="https://res.cloudinary.com/dxuqropj9/image/upload/q_auto/headshot.png"
-      />
+      <img class="headshot" src="https://res.cloudinary.com/dxuqropj9/image/upload/q_auto/headshot.png" />
     </div>
+    <script>
+      const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+      const currentTheme = localStorage.getItem("theme");
+
+      if (currentTheme) {
+        document.documentElement.setAttribute("data-theme", currentTheme);
+        if (currentTheme === "dark") {
+          toggleSwitch.checked = true;
+        }
+      } else {
+        const preferDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const preferLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+        if (preferDark) {
+          localStorage.setItem("theme", "dark");
+          document.documentElement.setAttribute("data-theme", "dark");
+          if (currentTheme === "dark" || preferDark) {
+            toggleSwitch.checked = true;
+          }
+        }
+        if (preferLight) {
+          localStorage.setItem("theme", "light");
+          document.documentElement.setAttribute("data-theme", "light");
+          if (currentTheme === "dark" || preferDark) {
+            toggleSwitch.checked = true;
+          }
+        }
+      }
+
+      function switchTheme(e) {
+        if (e.target.checked) {
+          document.documentElement.setAttribute("data-theme", "dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          document.documentElement.setAttribute("data-theme", "light");
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      toggleSwitch.addEventListener("change", switchTheme, false);
+    </script>
   </body>
 </html>

@@ -5,6 +5,16 @@
   font-weight: 400;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
+:root {
+  --background: #eee8d5;
+  --color: #003440;
+}
+
+[data-theme="dark"] {
+  --background: #003440;
+  --color: #eee8d5;
+}
+
 *,
 :after,
 :before {
@@ -26,26 +36,73 @@ html {
 
 body {
   font-family: "Fira Code";
-  background: #003440;
   padding: 0;
   margin: 0;
-  color: #eee8d5;
+  background-color: var(--background);
+  color: var(--color);
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #003440;
-    color: #eee8d5;
-  }
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+.theme-switch-wrapper span {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    background: #eee8d5;
-    color: #003440;
-  }
+.theme-switch input {
+  display: none;
 }
 
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 .hi {
   font-size: 7rem;
   font-weight: normal;
@@ -114,9 +171,7 @@ body {
 #strava:hover {
   color: #fc5200;
 }
-#chorus-logo {
-  padding-right: 1rem;
-}
+
 .chorus:hover #chorus-logo {
   color: black;
 }
