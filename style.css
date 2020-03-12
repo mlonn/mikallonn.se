@@ -204,6 +204,6 @@ input:checked + .slider:before {
     max-width: 50vw;
     object-fit: scale-down;
     object-position: bottom;
-    align-self: end;
+    align-self: flex-end;
   }
 }
