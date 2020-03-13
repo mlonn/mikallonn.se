@@ -1,10 +1,5 @@
-@import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css");
+@import url("https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css");
 
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 400;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-}
 :root {
   --background: #eee8d5;
   --color: #003440;
@@ -31,11 +26,13 @@ a:active {
 html {
   padding: 0;
   font-size: 1vw;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
 }
 
 body {
-  font-family: "Fira Code";
+  font-family: "Source Code Pro";
   padding: 0;
   margin: 0;
   background-color: var(--background);
@@ -44,6 +41,7 @@ body {
 
 nav {
   position: absolute;
+  z-index: 10;
   top: 2rem;
   right: 2rem;
 }
@@ -113,6 +111,7 @@ input:checked + .slider:before {
 }
 
 .container {
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -136,6 +135,9 @@ input:checked + .slider:before {
 }
 
 .headshot {
+  position: relative;
+  animation-name: inbottom;
+  animation-duration: 1.8s;
   height: 60vh;
   flex-grow: 1;
 }
@@ -151,7 +153,10 @@ input:checked + .slider:before {
 }
 
 .social-item svg {
+  position: relative;
+  animation-name: inleft;
   width: 5rem;
+  height: 5rem;
 }
 .chorus {
   display: inline-block;
@@ -159,6 +164,23 @@ input:checked + .slider:before {
 .chorus svg {
   height: 3rem;
   vertical-align: bottom;
+}
+
+#github {
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+#linkedin {
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in;
+}
+#untappd {
+  animation-duration: 1.4s;
+  animation-timing-function: ease-in;
+}
+#strava {
+  animation-duration: 1.6s;
+  animation-timing-function: ease-in;
 }
 
 #github:hover {
@@ -205,5 +227,28 @@ input:checked + .slider:before {
     object-fit: scale-down;
     object-position: bottom;
     align-self: flex-end;
+    animation-name: inleft;
+  }
+}
+@keyframes inleft {
+  from {
+    left: 100vh;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes inbottom {
+  from {
+    top: 100vh;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes type {
+  to {
+    white-space: normal;
+    width: 100%;
   }
 }
