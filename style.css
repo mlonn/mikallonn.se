@@ -158,10 +158,10 @@ input:checked + .slider:before {
   width: 5rem;
   height: 5rem;
 }
-.chorus {
+.sendify {
   display: inline-block;
 }
-.chorus svg {
+.sendify svg {
   height: 3rem;
   vertical-align: bottom;
 }
@@ -196,10 +196,10 @@ input:checked + .slider:before {
   color: #fc5200;
 }
 
-.chorus:hover #chorus-logo {
+.sendify:hover #sendify-logo {
   color: black;
 }
-.chorus:hover #chorus-symbol {
+.sendify:hover #sendify-symbol {
   color: #c82131;
 }
 @media screen and (min-width: 768px) {
